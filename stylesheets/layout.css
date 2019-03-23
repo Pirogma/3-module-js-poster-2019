@@ -31,8 +31,6 @@ body {
 	z-index: 1;
 }
 
-.frog_bottom p {}
-
 .frog_top {
 	clip-path: polygon(100% 0, 50% 50%, 0 0);
 	width: 600px;
@@ -88,8 +86,6 @@ body {
 	opacity: 0;
 }
 
-.frog_left+.frog_right p {}
-
 .frog_right {
 	top: 300px;
 	clip-path: polygon(100% 0, 50% 50%, 0 0);
@@ -115,7 +111,10 @@ body {
 	font-family: 'Code Pro', sans-serif;
 	line-height: 30px;
 	position: absolute;
-	z-index: 3;
+}
+
+.frog_top p {
+	transform: rotate(180deg);
 }
 
 .origami_cat {

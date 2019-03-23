@@ -39,6 +39,7 @@ $(function() {
    })
 
 
+
    $(function() {
     $(".cat_bottom").delay(1000).animate({
     height: '0'}, {duration: 600, specialEasing: {height: 'linear'}
@@ -65,6 +66,10 @@ $(function() {
       $(function() {
         $(".cat").delay(3800).fadeTo(0, 1)
 })
+      $(function() {
+        $(".cat_center p").delay(3800).fadeTo(0, 0.5)
+      })
+
 
 
 $(function() {
@@ -100,3 +105,7 @@ $(function() {
    $(function() {
      $(".dog").delay(3800).fadeTo(0, 1)
 })
+
+  $(function() {
+    $(".dog_center p").delay(3800).fadeTo(0, 0.5)
+  })
