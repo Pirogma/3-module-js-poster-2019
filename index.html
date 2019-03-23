@@ -27,16 +27,16 @@
   <div class="frog_second-right"></div>
 
   <a href="#"><img class="frog" src="images/frog.png" alt="frog"></a>
-         <audio id="sound-link-1" preload="auto">
+         <audio id="soundFrog" preload="auto">
             <source src="audio/croak.mp3" type="audio/mpeg">
          </audio>
 
 <img class="arrow" src="images/share.png" alt="share">
 
 <script>
-var soundLink = $("#sound-link-1")[0];
+var soundFrog = $("#soundFrog")[0];
         $(".frog").click(function() {
-            soundLink.play();
+            soundFrog.play();
         });
 </script>
     </section>
@@ -56,14 +56,14 @@ var soundLink = $("#sound-link-1")[0];
       <div class="cat_second-right"></div>
 
       <a href="#"><img class="cat" src="images/cat.svg" alt="cat"></a>
-             <audio id="sound-link-2" preload="auto">
-                <source src="audio/croak.mp3" type="audio/mpeg">
+             <audio id="soundCat" preload="auto">
+                <source src="audio/mew.mp3" type="audio/mpeg">
              </audio>
 
     <script>
-    var soundLink = $("#sound-link-2")[0];
+    var soundCat = $("#soundCat")[0];
             $(".cat").click(function() {
-                soundLink.play();
+                soundCat.play();
             });
     </script>
         </section>
@@ -88,14 +88,14 @@ var soundLink = $("#sound-link-1")[0];
 
 
           <a href="#"><img class="dog" src="images/dog.svg" alt="dog"></a>
-                 <audio id="sound-link-3" preload="auto">
+                 <audio id="soundDog" preload="auto">
                     <source src="audio/gav.mp3" type="audio/mpeg">
                  </audio>
 
         <script>
-        var soundLink = $("#sound-link-2")[0];
+        var soundDog = $("#soundDog")[0];
                 $(".dog").click(function() {
-                    soundLink.play();
+                    soundDog.play();
                 });
         </script>
             </section>
