@@ -1,8 +1,6 @@
 $(function() {
-  var origami = new Array ('frog', 'cat');
-  getRandomInRange(0, 1)
-  document.getElementsByClassName("origami_" + Math.floor(Math.random() * 2 + 1)).style.display = 'none';
-
+  var random = Math.floor(Math.random() * $('.origami').length);
+$('.origami').hide().eq(random).show();
 });
 
 $(function() {

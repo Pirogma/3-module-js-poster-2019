@@ -11,100 +11,107 @@
 
   </head>
   <body>
+<section class="origami">
+  <section class="origami_frog">
+    <div class="frog_top"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="frog_bottom"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+        <div class="frog_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
+          В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
+          Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
+        </div>
+    <div class="frog_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="frog_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="frog_second-left"></div>
+    <div class="frog_second-right"></div>
 
-<section class="origami_frog">
-  <div class="frog_top"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-      </div>
-  <div class="frog_bottom"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-      </div>
-      <div class="frog_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
-        В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
-        Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
-      </div>
-  <div class="frog_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-      </div>
-  <div class="frog_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-      </div>
-  <div class="frog_second-left"></div>
-  <div class="frog_second-right"></div>
+    <a href="#"><img class="frog" src="images/frog.png" alt="frog"></a>
+           <audio id="soundFrog" preload="auto">
+              <source src="audio/croak.mp3" type="audio/mpeg">
+           </audio>
 
-  <a href="#"><img class="frog" src="images/frog.png" alt="frog"></a>
-         <audio id="soundFrog" preload="auto">
-            <source src="audio/croak.mp3" type="audio/mpeg">
-         </audio>
+  <img class="arrow" src="images/share.png" alt="share">
 
-<img class="arrow" src="images/share.png" alt="share">
+  <script>
+  var soundFrog = $("#soundFrog")[0];
+          $(".frog").click(function() {
+              soundFrog.play();
+          });
+  </script>
+      </section>
+</section>
 
-<script>
-var soundFrog = $("#soundFrog")[0];
-        $(".frog").click(function() {
-            soundFrog.play();
-        });
-</script>
-    </section>
+<section class="origami">
+  <section class="origami_cat">
+    <div class="cat_top"><p>ИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="cat_bottom"><p>ИнфаИнфаИнфаИнфаИнф<ИнфаИнфаИнфаИнфаИнф/p>
+        </div>
+        <div class="cat_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
+      В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
+      Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
+    </div>
+    <div class="cat_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="cat_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="cat_second-left"></div>
+    <div class="cat_second-right"></div>
 
-    <section class="origami_cat">
-      <div class="cat_top"><p>ИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнф</p>
-          </div>
-      <div class="cat_bottom"><p>ИнфаИнфаИнфаИнфаИнф<ИнфаИнфаИнфаИнфаИнф/p>
-          </div>
-          <div class="cat_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
-        В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
-        Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
-      </div>
-      <div class="cat_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-          </div>
-      <div class="cat_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-          </div>
-      <div class="cat_second-left"></div>
-      <div class="cat_second-right"></div>
+    <a href="#"><img class="cat" src="images/cat.svg" alt="cat"></a>
+           <audio id="soundCat" preload="auto">
+              <source src="audio/mew.mp3" type="audio/mpeg">
+           </audio>
 
-      <a href="#"><img class="cat" src="images/cat.svg" alt="cat"></a>
-             <audio id="soundCat" preload="auto">
-                <source src="audio/mew.mp3" type="audio/mpeg">
-             </audio>
+  <script>
+  var soundCat = $("#soundCat")[0];
+          $(".cat").click(function() {
+              soundCat.play();
+          });
+  </script>
+      </section>
+</section>
 
-    <script>
-    var soundCat = $("#soundCat")[0];
-            $(".cat").click(function() {
-                soundCat.play();
-            });
-    </script>
-        </section>
-
-        <section class="origami_dog">
-          <div class="dog_top"><p>ИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнф</p>
-              </div>
-          <div class="dog_bottom"><p>ИнфаИнфаИнфаИнфаИнф<ИнфаИнфаИнфаИнфаИнф/p>
-              </div>
-              <div class="dog_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
-        В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
-        Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
-      </div>
-          <div class="dog_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-              </div>
-          <div class="dog_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
-              </div>
-          <div class="dog_second-right"></div>
-          <div class="dog_second-left"></div>
-          <div class="dog_second-right-top"></div>
-          <div class="dog_second-left-top"></div>
-          <div class="dog_second-right-top-2"></div>
-          <div class="dog_second-left-top-2"></div>
+<section class="origami">
+  <section class="origami_dog">
+    <div class="dog_top"><p>ИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="dog_bottom"><p>ИнфаИнфаИнфаИнфаИнф<ИнфаИнфаИнфаИнфаИнф/p>
+        </div>
+        <div class="dog_center"><p>Этот параметр определяет динамику выполнения анимации — будет ли она проходить с замедлением, ускорением, равномерно или как то еще. Параметр easing задают с помощью функции.
+  В стандартном jQuery доступны лишь две такие функции: 'linear' и 'swing' (для равномерной анимации и анимации с ускорением). По умолчанию, easing равняется 'swing'. Другие варианты можно найти в плагинах, например, jQuery UI предоставляет более 30 новых динамик.
+  Существует возможность задавать разные значения easing для разных css-свойств, при выполнении одной анимации. Для этого нужно воспользоваться вторым вариантом функции animate() и задать опцию specialEasing. Например:</p>
+</div>
+    <div class="dog_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="dog_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+        </div>
+    <div class="dog_second-right"></div>
+    <div class="dog_second-left"></div>
+    <div class="dog_second-right-top"></div>
+    <div class="dog_second-left-top"></div>
+    <div class="dog_second-right-top-2"></div>
+    <div class="dog_second-left-top-2"></div>
 
 
-          <a href="#"><img class="dog" src="images/dog.svg" alt="dog"></a>
-                 <audio id="soundDog" preload="auto">
-                    <source src="audio/gav.mp3" type="audio/mpeg">
-                 </audio>
+    <a href="#"><img class="dog" src="images/dog.svg" alt="dog"></a>
+           <audio id="soundDog" preload="auto">
+              <source src="audio/gav.mp3" type="audio/mpeg">
+           </audio>
 
-        <script>
-        var soundDog = $("#soundDog")[0];
-                $(".dog").click(function() {
-                    soundDog.play();
-                });
-        </script>
-            </section>
+  <script>
+  var soundDog = $("#soundDog")[0];
+          $(".dog").click(function() {
+              soundDog.play();
+          });
+  </script>
+      </section>
+</section>
+
+
 
   </body>
 </html>

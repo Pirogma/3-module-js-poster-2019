@@ -117,6 +117,10 @@ body {
 	transform: rotate(180deg);
 }
 
+.frog_center p {
+	transform: rotate(180deg);
+}
+
 .origami_cat {
   margin-left: 800px;
 }
