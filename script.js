@@ -1,5 +1,9 @@
+$(function() {
+  var origami = new Array ('frog', 'cat');
+  getRandomInRange(0, 1)
+  document.getElementsByClassName("origami_" + Math.floor(Math.random() * 2 + 1)).style.display = 'none';
 
-
+});
 
 $(function() {
  $(".frog_top").delay(1000).animate({
@@ -60,4 +64,39 @@ $(function() {
 })
       $(function() {
         $(".cat").delay(3800).fadeTo(0, 1)
+})
+
+
+$(function() {
+ $(".dog_bottom").delay(1000).animate({
+ height: '0'}, {duration: 600, specialEasing: {height: 'linear'}
+                 });
+             });
+$(function() {
+ $(".dog_right").delay(1700).animate({
+ width: '0'}, {duration: 600, specialEasing: {width: 'linear'}
+                 });
+             });
+$(function() {
+ $(".dog_left").delay(1700).animate({
+ width: '0', height:"+300", left:"+=300"}, {duration: 600, specialEasing: {width: 'linear'}
+                 });
+             });
+$(function() {
+ $(".dog_top").delay(2500).animate({
+ width: "0", top:"0", left:"+=150"}, {duration: 600, specialEasing: {width: 'linear'}
+                 });
+             });
+ $(function() {
+   $(".dog_second-left, .dog_second-right").delay(2400).fadeTo(0, 1)
+})
+
+$(function() {
+  $(".dog_second-left-top, .dog_second-right-top").delay(3200).fadeTo(1, 0)
+})
+$(function() {
+  $(".dog_second-left-top-2, .dog_second-right-top-2").delay(3200).fadeTo(0, 1)
+})
+   $(function() {
+     $(".dog").delay(3800).fadeTo(0, 1)
 })

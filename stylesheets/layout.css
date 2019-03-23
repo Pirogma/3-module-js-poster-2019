@@ -163,7 +163,7 @@ body {
 
 .cat_second-left {
 	clip-path: polygon(80% 0, 50% 50%, 0 0);
-	transform: rotate(90deg);
+	transform: rotate(95deg);
 
 	width: 250px;
 	height: 250px;
@@ -204,7 +204,7 @@ body {
 
 .cat_second-right {
 	clip-path: polygon(100% 0, 50% 50%, 20% 0);
-  transform: rotate(270deg);
+  transform: rotate(265deg);
 
 	width: 250px;
 	height: 250px;
@@ -215,6 +215,159 @@ body {
 
 .origami_cat p {
 color: gray;
+font-size: 24px;
+font-family: 'Code Pro', sans-serif;
+line-height: 30px;
+position: absolute;
+z-index: 3;
+}
+
+.origami_dog {
+  margin-left: 0px;
+}
+
+.origami_dog div {
+  position: absolute;
+  overflow: hidden;
+  background: rgb(225,227,201);
+  background: linear-gradient(90deg, rgba(225,227,201,1) 25%, rgba(255,252,240,1) 62%, rgba(255,254,236,1) 100%);
+}
+
+.dog_top {
+  clip-path: polygon(100% 0, 50% 50%, 0 0);
+  transform: rotate(180deg);
+  width: 300px;
+  height: 290px;
+  margin-left: 150px;
+  top: -140px;
+
+  z-index: 1;
+}
+
+.dog_top p {
+  transform: rotate(180deg);
+
+}
+
+.dog_bottom {
+    clip-path: polygon(100% 0, 50% 50%, 0 0);
+
+    width: 600px;
+    height: 600px;
+    top: 300px;
+}
+
+.dog_left {
+  clip-path: polygon(80% 0, 50% 50%, 0 0);
+  transform: rotate(180deg);
+  transform: scale(1, -1);
+  width: 300px;
+  height: 300px;
+}
+
+.dog_second-left {
+	clip-path: polygon(70% 0, 70% 30%, 50% 50%, 20% 0);
+  transform: rotate(265deg);
+
+	width: 250px;
+	height: 250px;
+	margin-left: 325px;
+	top: 25px;
+	opacity: 0;
+}
+
+.dog_second-left-top {
+	clip-path: polygon(30% 0, 30% 30%, 100% 0);
+  transform: rotate(265deg);
+
+	width: 100px;
+	height: 250px;
+	margin-left: 395px;
+	top: -44px;
+	opacity: 1;
+}
+
+.dog_second-left-top-2 {
+	clip-path: polygon(70% 0, 70% 30%, 0 0);
+  transform: rotate(275deg);
+	border: 1px solid #fffeec;
+	width: 100px;
+	height: 250px;
+	margin-left: 276px;
+	top: 10px;
+	opacity: 0;
+
+	z-index: 1;
+}
+
+.dog_center {
+  clip-path: polygon(0 50%, 100% 50%, 70% 100%, 30% 100%);
+
+  width: 300px;
+  height: 300px;
+  margin-left: 150px;
+  z-index: 1;
+}
+
+  .origami_dog img {
+  position: absolute;
+  z-index: 1;
+  margin-left: 210px;
+  top: 120px;
+  width:180px;
+  opacity: 0;
+}
+
+.dog_left + .dog_right p {
+  transform: rotate(180deg);
+}
+
+.dog_right {
+  clip-path: polygon(80% 0, 50% 50%, 0 0);
+  transform: rotate(180deg);
+  width: 300px;
+  height: 300px;
+  margin-left: 300px;
+}
+
+.dog_second-right {
+	clip-path: polygon(80% 0, 50% 50%, 30% 30%, 30% 0);
+	transform: rotate(95deg);
+
+	width: 250px;
+	height: 250px;
+	margin-left: 25px;
+	top: 25px;
+	opacity: 0;
+}
+
+.dog_second-right-top {
+	clip-path: polygon(70% 0, 70% 30%, 0 0);
+  transform: rotate(95deg);
+
+	width: 100px;
+	height: 250px;
+	margin-left: 106px;
+	top: -44px;
+	opacity: 1;
+}
+
+.dog_second-right-top-2 {
+	clip-path: polygon(30% 0, 30% 30%, 100% 0);
+  transform: rotate(85deg);
+
+	border: 1px solid #e1e3c9;
+	width: 100px;
+	height: 250px;
+	margin-left: 222px;
+	top: 10px;
+	opacity: 0;
+
+	z-index: 1;
+}
+
+.origami_dog p {
+color: orange;
 font-size: 24px;
 font-family: 'Code Pro', sans-serif;
 line-height: 30px;
