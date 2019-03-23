@@ -1,4 +1,6 @@
 
+
+
 $(function() {
  $(".frog_top").delay(1000).animate({
  height: '0', top: '300'}, {duration: 600, specialEasing: {height: 'linear'}

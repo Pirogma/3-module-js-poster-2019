@@ -162,11 +162,14 @@ body {
 }
 
 .cat_second-left {
-  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
-  width: 150px;
-  height: 150px;
-  margin-left: 320px;
-  opacity: 0;
+	clip-path: polygon(80% 0, 50% 50%, 0 0);
+	transform: rotate(90deg);
+
+	width: 250px;
+	height: 250px;
+	margin-left: 25px;
+	top: 25px;
+	opacity: 0;
 }
 
 .cat_center {
@@ -181,9 +184,9 @@ body {
   .origami_cat img {
   position: absolute;
   z-index: 1;
-  margin-left: 150px;
-  top: 60px;
-  width: 300px;
+  margin-left: 210px;
+  top: 120px;
+  width:180px;
   opacity: 0;
 }
 
@@ -200,11 +203,14 @@ body {
 }
 
 .cat_second-right {
-  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
-  width: 150px;
-  height: 150px;
-  margin-left: 130px;
-  opacity: 0;
+	clip-path: polygon(100% 0, 50% 50%, 20% 0);
+  transform: rotate(270deg);
+
+	width: 250px;
+	height: 250px;
+	margin-left: 325px;
+	top: 25px;
+	opacity: 0;
 }
 
 .origami_cat p {
