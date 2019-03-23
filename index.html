@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated poster</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+   <script src="jquery.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+
+
+
+  </head>
+  <body>
+<section class="origami_frog">
+  <div class="frog_top"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+      </div>
+  <div class="frog_bottom"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+      </div>
+  <div class="frog_center"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+      </div>
+  <div class="frog_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+      </div>
+  <div class="frog_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+      </div>
+  <div class="frog_second-left"></div>
+  <div class="frog_second-right"></div>
+
+  <a href="#"><img class="frog" src="images/frog.png" alt="frog"></a>
+         <audio id="sound-link-1" preload="auto">
+            <source src="audio/croak.mp3" type="audio/mpeg">
+         </audio>
+
+<img class="arrow" src="images/share.png" alt="share">
+
+<script>
+var soundLink = $("#sound-link-1")[0];
+        $(".frog").click(function() {
+            soundLink.play();
+        });
+</script>
+    </section>
+
+    <section class="origami_cat">
+      <div class="cat_top"><p>ИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнфаИнф</p>
+          </div>
+      <div class="cat_bottom"><p>ИнфаИнфаИнфаИнфаИнф<ИнфаИнфаИнфаИнфаИнф/p>
+          </div>
+      <div class="cat_center"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+          </div>
+      <div class="cat_left"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+          </div>
+      <div class="cat_right"><p>ИнфаИнфаИнфаИнфаИнфИнфаИнфаИнфаИнфаИнф</p>
+          </div>
+      <div class="cat_second-left"></div>
+      <div class="cat_second-right"></div>
+
+      <a href="#"><img class="cat" src="images/cat.png" alt="cat"></a>
+             <audio id="sound-link-2" preload="auto">
+                <source src="audio/croak.mp3" type="audio/mpeg">
+             </audio>
+
+    <script>
+    var soundLink = $("#sound-link-2")[0];
+            $(".cat").click(function() {
+                soundLink.play();
+            });
+    </script>
+        </section>
+
+  </body>
+</html>
