@@ -11,6 +11,27 @@ body {
 	background-color: #78fbfd;
 }
 
+.Button {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+	padding: 20px;
+	margin-left: 20.703vw;
+}
+
+a {
+	background-color: white;
+	color: #78fbfd;
+	text-decoration: none;
+	font-size: 18pt;
+	padding: 15px;
+	border-radius: 5px;
+	border-width: thick;
+	border-style: dotted;
+	font-weight: bold;
+	font-family: 'Code Pro', sans-serif;
+}
+
 .text {
 	position: absolute;
 }

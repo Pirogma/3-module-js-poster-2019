@@ -3,7 +3,6 @@
    <head>
       <meta charset="utf-8">
       <title>touch and run</title>
-      <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
       <script src="jquery.js" charset="utf-8"></script>
       <script  src="game.js"></script>
       <style>
@@ -12,6 +11,7 @@
          width: 100%;
          height: 100%;
          margin: 0;
+         background-color: #74ed97;
          background-image: url("images/background.svg");
          background-size: cover;
          background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 
       #cursor{
          pointer-events: none;
-         width: 225px;
+         width: 200px;
          position:absolute;
          left:50%;
          top:50%;
@@ -36,6 +36,12 @@
          width: 200px;
          top: 300px;
          }
+
+         #frog {
+            position: absolute;
+            width: 225px;
+            top: 300px;
+            }
 
       h1 {
          color: #fff;
@@ -54,30 +60,30 @@
       </style>
    </head>
    <body>
-      <img id="cursor" src="images/frog.cur" />
-      <h1>Touch and run!</h1>
+      <img id="cursor" src="images/cat.cur" />
+      <h1>Touch and run</h1>
       <p>Go left: ← or (a)</p>
       <p>Go right: → or (d)</p>
       <p>Go up: ↑ or (w)</p>
       <p>Go down: ↓ or (s)</p>
 
-      <img id="cat" src="images/cat.png " alt="cat">
+      <img id="frog" src="images/frog_g.png " alt="frog">
 
-      <audio id="soundCat" preload="auto">
-         <source src="audio/mew.mp3" type="audio/mpeg">
+      <audio id="soundFrog" preload="auto">
+         <source src="audio/croak.mp3" type="audio/mpeg">
       </audio>
 
       <script>
-         var soundFrog = $("#soundCat")[0];
-                 $("#cat").click(function() {
-                     soundCat.play();
+         var soundFrog = $("#soundFrog")[0];
+                 $("#frog").click(function() {
+                     soundFrog.play();
                  });
       </script>
    </body>
 
    <script>
       $(function() {
-          $("#cat").each(function(index) {
+          $("#frog").each(function(index) {
 
             let x = Math.round(Math.random() * 1000)
             $(this).css({
@@ -101,28 +107,28 @@
           for (var direction in keys) {
               if (!keys.hasOwnProperty(direction)) continue;
               if (direction == 37) {
-                  $("#cat").animate({left: "-=10"}, 0);
+                  $("#frog").animate({left: "-=10"}, 0);
               }
               if (direction == 38) {
-                  $("#cat").animate({top: "-=10"}, 0);
+                  $("#frog").animate({top: "-=10"}, 0);
               }
               if (direction == 39) {
-                  $("#cat").animate({left: "+=10"}, 0);
+                  $("#frog").animate({left: "+=10"}, 0);
               }
               if (direction == 40) {
-                  $("#cat").animate({top: "+=10"}, 0);
+                  $("#frog").animate({top: "+=10"}, 0);
               }
               if (direction == 65) {
-                  $("#cat").animate({left: "-=10"}, 0);
+                  $("#frog").animate({left: "-=10"}, 0);
               }
               if (direction == 68) {
-                  $("#cat").animate({left: "+=10"}, 0);
+                  $("#frog").animate({left: "+=10"}, 0);
               }
               if (direction == 87) {
-                  $("#cat").animate({top: "-=10"}, 0);
+                  $("#frog").animate({top: "-=10"}, 0);
               }
               if (direction == 83) {
-                  $("#cat").animate({top: "+=10"}, 0);
+                  $("#frog").animate({top: "+=10"}, 0);
               }
           }
       }

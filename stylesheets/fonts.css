@@ -3,3 +3,9 @@
 
   src: url("../fonts/Code Pro LC.otf") format("truetype");
 }
+
+@font-face {
+  font-family: "Fira Sans Bold";
+
+  src: url("../fonts/FiraSans-Bold.otf") format("truetype");
+}
