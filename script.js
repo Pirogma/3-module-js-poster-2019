@@ -6,6 +6,7 @@ $('.origami').hide().eq(random).show();
 
 var mql = window.matchMedia('all and (max-width: 767px)');
 if (mql.matches) {
+
   $(function() {
    $(".frog_top").delay(1000).animate({
    height: '0', top: '150'}, {duration: 600, specialEasing: {height: 'linear'}

@@ -11,6 +11,9 @@ body {
 	background-color: #78fbfd;
 }
 
+.text {
+	position: absolute;
+}
 .origami_frog {
 	margin-left: 3.125vw;
 }

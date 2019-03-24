@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>touch and run</title>
+      <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+      <script src="jquery.js" charset="utf-8"></script>
+      <script  src="game.js"></script>
+      <style>
+
+     html, body {
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         background-image: url("images/background.svg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         overflow: hidden;
+         font-family: 'Code Pro', sans-serif;
+         cursor: none;
+         }
+
+      #cursor{
+         pointer-events: none;
+         width: 225px;
+         position:absolute;
+         left:50%;
+         top:50%;
+         transform:translate(-50%,-50%);
+         z-index: 10;
+         cursor:pointer;
+         }
+
+      #cat {
+         position: absolute;
+         width: 200px;
+         top: 300px;
+         }
+
+      h1 {
+         color: #fff;
+         font-size: 44pt;
+         text-align: center;
+         }
+
+      p {
+         font-family: 'Code Pro', sans-serif;
+         text-align: right;
+         color: #fff;
+         font-size: 24pt;
+         padding-right: 15px;
+         }
+
+      </style>
+   </head>
+   <body>
+      <img id="cursor" src="images/frog.cur" />
+      <h1>Touch and run!</h1>
+      <p>Go left: ← or (a)</p>
+      <p>Go right: → or (d)</p>
+      <p>Go up: ↑ or (w)</p>
+      <p>Go down: ↓ or (s)</p>
+
+      <img id="cat" src="images/cat.png " alt="cat">
+
+      <audio id="soundCat" preload="auto">
+         <source src="audio/mew.mp3" type="audio/mpeg">
+      </audio>
+
+      <script>
+         var soundFrog = $("#soundCat")[0];
+                 $("#cat").click(function() {
+                     soundCat.play();
+                 });
+      </script>
+   </body>
+
+   <script>
+      $(function() {
+          $("#cat").each(function(index) {
+
+            let x = Math.round(Math.random() * 1000)
+            $(this).css({
+              "left": x + "px"
+            })
+          })
+        })
+
+      setInterval(movePlane, 20);
+      var keys = {}
+
+      $(document).keydown(function(e) {
+          keys[e.keyCode] = true;
+      });
+
+      $(document).keyup(function(e) {
+          delete keys[e.keyCode];
+      });
+
+      function movePlane() {
+          for (var direction in keys) {
+              if (!keys.hasOwnProperty(direction)) continue;
+              if (direction == 37) {
+                  $("#cat").animate({left: "-=10"}, 0);
+              }
+              if (direction == 38) {
+                  $("#cat").animate({top: "-=10"}, 0);
+              }
+              if (direction == 39) {
+                  $("#cat").animate({left: "+=10"}, 0);
+              }
+              if (direction == 40) {
+                  $("#cat").animate({top: "+=10"}, 0);
+              }
+              if (direction == 65) {
+                  $("#cat").animate({left: "-=10"}, 0);
+              }
+              if (direction == 68) {
+                  $("#cat").animate({left: "+=10"}, 0);
+              }
+              if (direction == 87) {
+                  $("#cat").animate({top: "-=10"}, 0);
+              }
+              if (direction == 83) {
+                  $("#cat").animate({top: "+=10"}, 0);
+              }
+          }
+      }
+   </script>
+</html>
