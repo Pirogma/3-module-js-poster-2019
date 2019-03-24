@@ -11,12 +11,27 @@
         background-repeat: no-repeat;
         overflow: hidden;
       }
+      header {
+        padding: 20px;
+        padding-left: 25px;
+      }
+
+       header a {
+         color: white;
+         text-decoration: none;
+         font-size: 14pt;
+         padding: 10px;
+         font-weight: bold;
+         background: none;
+         border: none;
+       }
+
  div {
    background: white;
-   padding: 60px;
+   padding: 30px 60px 60px;
    width: 600px;
    border-radius: 5px;
-   margin-left: 20.703vw;
+   margin-left: 14.844vw;
  }
       a {
         background-color: white;
@@ -45,6 +60,15 @@
         width: 600px;
       }
 
+      h2 {
+        margin-bottom: 5px;
+        font-family: 'Code Pro', sans-serif;
+        font-weight: bold;
+        font-size: 22pt;
+        color: green;
+        width: 600px;
+      }
+
       ul {
 
         margin-bottom: 50px;
@@ -52,25 +76,45 @@
 
       @media (min-width: 1440px) {
       div {
-        margin-left:  29.167vw;
+        margin-left:  25vw;
       }
       }
+
+      @media (min-width: 1920px) {
+      div {
+        margin-left:  31.250vw;
+      }
+      }
+
+      @media (min-width: 2048px) {
+      div {
+        margin-left:  32.422vw;
+      }
+      }
+
+      @media (min-width: 2560px) {
+      div {
+        margin-left:  35.938vw;
+      }
+      }
+
 
     </style>
   </head>
   <body>
-    <div class="">
+<header>
+  <a href="index.html">Главная</a>
+</header>
+
+    <div>
       <p>С Облачным Хранилищем Памяти ты уже победил(а) в гонке продуктивности. Можешь отвлечься и просто сыграть в догонялки с другом.</p>
       <p>Правила просты: "вóда" управляет кошкой при помощи курсора мыши, второй игрок пытается не попасться, перемещая жабку клавишами  на клавиатуре.</p>
 
       <ul>
-        <li>Игрок-1</li>
-        <li>Персонаж: кошка</li>
+        <h2>Игрок-1</h2>
         <li>Цель: поймать</li>
         <li>Управление: курсор мыши</li>
-<li></li>
-        <li>Игрок-2</li>
-        <li>Персонаж: жабка</li>
+        <h2>Игрок-2</h2>
         <li>Цель: убежать</li>
         <li>Управление: клавиши на клавиатуре</li>
       </ul>
