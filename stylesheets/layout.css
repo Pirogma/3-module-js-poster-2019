@@ -378,6 +378,61 @@ position: absolute;
 z-index: 3;
 }
 
+@media (min-width: 375px) {
+	.origami_frog {
+		margin-left: 10vw;
+	}
+
+	.origami_cat {
+		margin-left: 10vw;
+	}
+
+	.origami_dog {
+		margin-left: 10vw;
+	}
+}
+
+@media (min-width: 414px) {
+	.origami_frog {
+		margin-left: 13.768vw;
+	}
+
+	.origami_cat {
+		margin-left: 13.768vw;
+	}
+
+	.origami_dog {
+		margin-left: 13.768vw;
+	}
+}
+
+@media (min-width: 520px) {
+	.origami_frog {
+		margin-left: 21.154vw;
+	}
+
+	.origami_cat {
+		margin-left: 21.154vw;
+	}
+
+	.origami_dog {
+		margin-left: 21.154vw;
+	}
+}
+
+@media (min-width: 640px) {
+	.origami_frog {
+		margin-left: 26.563vw;
+	}
+
+	.origami_cat {
+		margin-left: 26.563vw;
+	}
+
+	.origami_dog {
+		margin-left: 26.563vw;
+	}
+}
 
 @media (min-width: 768px) {
 
@@ -1515,4 +1570,18 @@ position: absolute;
 z-index: 3;
 }
 
+}
+
+@media (min-width: 2560px) {
+	.origami_frog {
+		margin-left: 18.750vw;
+	}
+
+	.origami_cat {
+		margin-left: 18.750vw;
+	}
+
+	.origami_dog {
+		margin-left: 18.750vw;
+	}
 }
