@@ -3,67 +3,11 @@
    <head>
       <meta charset="utf-8">
       <title>touch and run</title>
+      <link rel="stylesheet" href="stylesheets/game1.css">
       <script src="jquery.js" charset="utf-8"></script>
-      <script  src="game.js"></script>
-      <style>
+      <script  src="js/game1.js"></script>
+      <script  src="js/game.js"></script>
 
-     html, body {
-         width: 100%;
-         height: 100%;
-         margin: 0;
-         background-color: #74ed97;
-         background-image: url("images/background.svg");
-         background-size: cover;
-         background-repeat: no-repeat;
-         overflow: hidden;
-         font-family: 'Code Pro', sans-serif;
-         cursor: none;
-         }
-
-    header {
-      padding: 28px 28px 0px;
-    }
-
-     header a {
-       color: white;
-       text-decoration: none;
-       font-size: 14pt;
-       padding: 15px 15px 0px;
-       font-weight: bold;
-     }
-
-      #cursor{
-         pointer-events: none;
-         width: 200px;
-         position:absolute;
-         left:50%;
-         top:50%;
-         transform:translate(-50%,-50%);
-         z-index: 10;
-         cursor:pointer;
-         }
-
-         #frog {
-            position: absolute;
-            width: 225px;
-            top: 300px;
-            }
-
-      h1 {
-         color: #fff;
-         font-size: 44pt;
-         text-align: center;
-         }
-
-      p {
-         font-family: 'Code Pro', sans-serif;
-         text-align: right;
-         color: #fff;
-         font-size: 24pt;
-         padding-right: 15px;
-         }
-
-      </style>
    </head>
    <body>
      <header>
@@ -84,64 +28,6 @@
          <source src="audio/croak.mp3" type="audio/mpeg">
       </audio>
 
-      <script>
-         var soundFrog = $("#soundFrog")[0];
-                 $("#frog").click(function() {
-                     soundFrog.play();
-                 });
-      </script>
    </body>
 
-   <script>
-      $(function() {
-          $("#frog").each(function(index) {
-
-            let x = Math.round(Math.random() * 1000)
-            $(this).css({
-              "left": x + "px"
-            })
-          })
-        })
-
-      setInterval(movePlane, 20);
-      var keys = {}
-
-      $(document).keydown(function(e) {
-          keys[e.keyCode] = true;
-      });
-
-      $(document).keyup(function(e) {
-          delete keys[e.keyCode];
-      });
-
-      function movePlane() {
-          for (var direction in keys) {
-              if (!keys.hasOwnProperty(direction)) continue;
-              if (direction == 37) {
-                  $("#frog").animate({left: "-=10"}, 0);
-              }
-              if (direction == 38) {
-                  $("#frog").animate({top: "-=10"}, 0);
-              }
-              if (direction == 39) {
-                  $("#frog").animate({left: "+=10"}, 0);
-              }
-              if (direction == 40) {
-                  $("#frog").animate({top: "+=10"}, 0);
-              }
-              if (direction == 65) {
-                  $("#frog").animate({left: "-=10"}, 0);
-              }
-              if (direction == 68) {
-                  $("#frog").animate({left: "+=10"}, 0);
-              }
-              if (direction == 87) {
-                  $("#frog").animate({top: "-=10"}, 0);
-              }
-              if (direction == 83) {
-                  $("#frog").animate({top: "+=10"}, 0);
-              }
-          }
-      }
-   </script>
 </html>

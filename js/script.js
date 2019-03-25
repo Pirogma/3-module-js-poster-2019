@@ -1,5 +1,27 @@
 
 $(function() {
+  var soundFrog = $("#soundFrog")[0];
+          $(".frog").click(function() {
+              soundFrog.play();
+          })
+})
+
+$(function() {
+  var soundCat = $("#soundCat")[0];
+          $(".cat").click(function() {
+              soundCat.play();
+          })
+})
+
+$(function() {
+  var soundDog = $("#soundDog")[0];
+          $(".dog").click(function() {
+              soundDog.play();
+          })
+  })
+
+
+$(function() {
   $(".intro-1").delay(0).fadeTo(0, 1)
 })
 

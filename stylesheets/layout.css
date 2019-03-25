@@ -1450,6 +1450,14 @@ z-index: 3;
 	margin-left: 29.167vw;
 }
 
+.end {
+	margin-left: 29.167vw;
+}
+
+.end p {
+font-size: 24pt;
+}
+
 .game {
 	display: flex;
 }
