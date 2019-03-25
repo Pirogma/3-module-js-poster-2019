@@ -13,28 +13,81 @@ body {
 
 .Button {
 	display: flex;
-	justify-content: space-between;
-	width: 600px;
-	padding: 20px;
-	margin-left: 20.703vw;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	margin-top: 25px;
+	opacity: 0;
+	margin-left: 3.125vw;
+}
+
+.game {
+	display: none;
 }
 
 a {
-	background-color: white;
-	color: #78fbfd;
+	color: white;
+	background-color: #78fbfd;
 	text-decoration: none;
 	font-size: 18pt;
 	padding: 15px;
 	border-radius: 5px;
-	border-width: thick;
-	border-style: dotted;
+	border-width: medium;
+	border-style: solid;
 	font-weight: bold;
 	font-family: 'Code Pro', sans-serif;
+	margin-bottom: 15px;
 }
 
-.text {
+.text p {
 	position: absolute;
+	margin-left: 3.125vw;
+
+	top: 100px;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 26pt;
+	font-weight: 400;
+	color: white;
 }
+
+.intro-1 {
+	opacity: 0;
+}
+
+.intro-2 {
+	opacity: 0;
+}
+
+.intro-3 {
+	opacity: 0;
+}
+
+.intro-4 {
+	opacity: 0;
+}
+
+.end {
+	margin-left: 3.125vw;
+	margin-top: 245px;
+	width: 300px;
+}
+
+.end p {
+text-align: center;
+font-family: 'Fira Sans', sans-serif;
+font-size: 16pt;
+font-weight: 400;
+color: white;
+}
+
+.phrase-1 {
+	opacity: 0;
+}
+
+.phrase-2 {
+	opacity: 0;
+}
+
 .origami_frog {
 	margin-left: 3.125vw;
 }
@@ -103,10 +156,19 @@ a {
 
 .arrow {
 	position: absolute;
-	top: 85px;
-	margin-left: 135px;
-	width: 50px;
-	transform: rotate(90deg);
+	top: 45px;
+	margin-left: 105px;
+	width: 100px;
+
+	opacity: 0;
+}
+
+.arrow2 {
+	position: absolute;
+	top: 125px;
+	margin-left: 32.813vw;
+	width: 100px;
+
 	opacity: 0;
 }
 
@@ -217,7 +279,11 @@ a {
   opacity: 0;
 }
 
-.cat_left + .cat_right p {
+.cat_left p {
+	  transform: rotate(180deg);
+	}
+
+.cat_right p {
   transform: rotate(180deg);
 }
 
@@ -345,7 +411,11 @@ z-index: 3;
   opacity: 0;
 }
 
-.dog_left + .dog_right p {
+.dog_left p {
+   transform: rotate(180deg);
+ }
+
+ .dog_right p {
   transform: rotate(180deg);
 }
 
@@ -403,6 +473,14 @@ z-index: 3;
 }
 
 @media (min-width: 375px) {
+	.Button {
+		margin-left: 10vw;
+	}
+
+	.end {
+		margin-left: 10vw;
+	}
+
 	.origami_frog {
 		margin-left: 10vw;
 	}
@@ -413,10 +491,22 @@ z-index: 3;
 
 	.origami_dog {
 		margin-left: 10vw;
+	}
+
+	.arrow2 {
+		margin-left: 38vw;
 	}
 }
 
 @media (min-width: 414px) {
+	.Button {
+		margin-left: 13.768vw;
+	}
+
+	.end {
+		margin-left: 13.768vw;
+	}
+
 	.origami_frog {
 		margin-left: 13.768vw;
 	}
@@ -427,10 +517,22 @@ z-index: 3;
 
 	.origami_dog {
 		margin-left: 13.768vw;
+	}
+
+	.arrow2 {
+		margin-left: 39.130vw;
 	}
 }
 
 @media (min-width: 520px) {
+	.Button {
+		margin-left: 21.154vw;
+	}
+
+	.end {
+		margin-left: 21.154vw;
+	}
+
 	.origami_frog {
 		margin-left: 21.154vw;
 	}
@@ -441,10 +543,22 @@ z-index: 3;
 
 	.origami_dog {
 		margin-left: 21.154vw;
+	}
+
+	.arrow2 {
+		margin-left: 41.346vw;
 	}
 }
 
 @media (min-width: 640px) {
+	.Button {
+		margin-left: 26.563vw;
+	}
+
+	.end {
+		margin-left: 26.563vw;
+	}
+
 	.origami_frog {
 		margin-left: 26.563vw;
 	}
@@ -455,18 +569,59 @@ z-index: 3;
 
 	.origami_dog {
 		margin-left: 26.563vw;
+	}
+
+	.arrow2 {
+		margin-left: 44.355vw;
 	}
 }
 
 @media (min-width: 768px) {
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
+.Button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	width: 600px;
+	margin-top: 30px;
+	opacity: 0;
+	margin-left: 10.938vw;
+}
+
+.game {
+	display: flex;
+}
+
+a {
+	color: white;
 	background-color: #78fbfd;
+	text-decoration: none;
+	font-size: 22pt;
+	padding: 18px;
+	border-radius: 5px;
+	border-width: thick;
+	border-style: solid;
+	font-weight: bold;
+	font-family: 'Code Pro', sans-serif;
+	margin-bottom: 15px;
+}
+
+.text {
+	position: absolute;
+}
+
+.end {
+	margin-left: 10.938vw;
+	margin-top: 505px;
+	width: 600px;
+}
+
+.end p {
+text-align: center;
+font-family: 'Fira Sans', sans-serif;
+font-size: 24pt;
+color: white;
 }
 
 .origami_frog {
@@ -537,10 +692,19 @@ body {
 
 .arrow {
 	position: absolute;
-	top: 170px;
-	margin-left: 270px;
-	width: 100px;
-	transform: rotate(90deg);
+	top: 90px;
+	margin-left: 220px;
+	width: 200px;
+
+	opacity: 0;
+}
+
+.arrow2 {
+	position: absolute;
+	top: 250px;
+	margin-left: 36.328vw;
+	width: 200px;
+
 	opacity: 0;
 }
 
@@ -651,7 +815,11 @@ body {
   opacity: 0;
 }
 
-.cat_left + .cat_right p {
+.cat_left p {
+  transform: rotate(180deg);
+}
+
+.cat_right p {
   transform: rotate(180deg);
 }
 
@@ -779,7 +947,11 @@ z-index: 3;
   opacity: 0;
 }
 
-.dog_left + .dog_right p {
+.dog_left p {
+  transform: rotate(180deg);
+}
+
+.dog_right p {
   transform: rotate(180deg);
 }
 
@@ -839,13 +1011,45 @@ z-index: 3;
 
 @media (min-width: 1024px) {
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
+.Button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	width: 600px;
+	margin-top: 30px;
+	opacity: 0;
+	margin-left: 20.703vw;
+}
+
+.game {
+	display: flex;
+}
+
+a {
+	color: white;
 	background-color: #78fbfd;
+	text-decoration: none;
+	font-size: 22pt;
+	padding: 18px;
+	border-radius: 5px;
+	border-width: thick;
+	border-style: solid;
+	font-weight: bold;
+	font-family: 'Code Pro', sans-serif;
+	margin-bottom: 15px;
+}
+
+.end {
+	margin-left: 20.703vw;
+}
+
+.end p {
+font-size: 24pt;
+}
+
+.text {
+	position: absolute;
 }
 
 .origami_frog {
@@ -916,10 +1120,19 @@ body {
 
 .arrow {
 	position: absolute;
-	top: 170px;
-	margin-left: 270px;
-	width: 100px;
-	transform: rotate(90deg);
+	top: 90px;
+	margin-left: 220px;
+	width: 200px;
+
+	opacity: 0;
+}
+
+.arrow2 {
+	position: absolute;
+	top: 250px;
+	margin-left: 39.746vw;
+	width: 200px;
+
 	opacity: 0;
 }
 
@@ -1030,7 +1243,11 @@ body {
   opacity: 0;
 }
 
-.cat_left + .cat_right p {
+.cat_left p {
+  transform: rotate(180deg);
+}
+
+.cat_right p {
   transform: rotate(180deg);
 }
 
@@ -1158,7 +1375,11 @@ z-index: 3;
   opacity: 0;
 }
 
-.dog_left + .dog_right p {
+.dog_left p {
+  transform: rotate(180deg);
+}
+
+.dog_right p {
   transform: rotate(180deg);
 }
 
@@ -1218,13 +1439,37 @@ z-index: 3;
 
 @media (min-width: 1440px) {
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
+.Button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	width: 600px;
+	margin-top: 30px;
+	opacity: 0;
+	margin-left: 29.167vw;
+}
+
+.game {
+	display: flex;
+}
+
+a {
+	color: white;
 	background-color: #78fbfd;
+	text-decoration: none;
+	font-size: 22pt;
+	padding: 18px;
+	border-radius: 5px;
+	border-width: thick;
+	border-style: solid;
+	font-weight: bold;
+	font-family: 'Code Pro', sans-serif;
+	margin-bottom: 15px;
+}
+
+.text {
+	position: absolute;
 }
 
 .origami_frog {
@@ -1295,10 +1540,19 @@ body {
 
 .arrow {
 	position: absolute;
-	top: 170px;
-	margin-left: 270px;
-	width: 100px;
-	transform: rotate(90deg);
+	top: 90px;
+	margin-left: 220px;
+	width: 200px;
+
+	opacity: 0;
+}
+
+.arrow2 {
+	position: absolute;
+	top: 250px;
+	margin-left: 42.708vw;
+	width: 200px;
+
 	opacity: 0;
 }
 
@@ -1409,7 +1663,11 @@ body {
   opacity: 0;
 }
 
-.cat_left + .cat_right p {
+.cat_left p {
+  transform: rotate(180deg);
+}
+
+.cat_right p {
   transform: rotate(180deg);
 }
 
@@ -1537,7 +1795,11 @@ z-index: 3;
   opacity: 0;
 }
 
-.dog_left + .dog_right p {
+.dog_left p {
+  transform: rotate(180deg);
+}
+
+.dog_right p {
   transform: rotate(180deg);
 }
 
@@ -1596,16 +1858,858 @@ z-index: 3;
 
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1920px) {
 	.origami_frog {
-		margin-left: 18.750vw;
+		margin-left: 34.375vw;
 	}
 
 	.origami_cat {
-		margin-left: 18.750vw;
+		margin-left: 34.375vw;
 	}
 
 	.origami_dog {
-		margin-left: 18.750vw;
+		margin-left: 34.375vw;
 	}
+
+	.Button {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: center;
+		width: 600px;
+		margin-top: 30px;
+		opacity: 0;
+		margin-left: 34.375vw;
+	}
+
+	.end {
+		margin-left: 34.375vw;
+	}
+
+	.end p {
+	font-size: 24pt;
+	}
+
+	.game {
+		display: flex;
+	}
+
+	a {
+		color: white;
+		background-color: #78fbfd;
+		text-decoration: none;
+		font-size: 22pt;
+		padding: 18px;
+		border-radius: 5px;
+		border-width: thick;
+		border-style: solid;
+		font-weight: bold;
+		font-family: 'Code Pro', sans-serif;
+		margin-bottom: 15px;
+	}
+
+	.text {
+		position: absolute;
+	}
+
+	.origami_frog div {
+		position: absolute;
+		overflow: hidden;
+		background: rgb(225, 227, 201);
+		background: linear-gradient(90deg, rgba(225, 227, 201, 1) 25%, rgba(255, 252, 240, 1) 62%, rgba(255, 254, 236, 1) 100%);
+	}
+
+	.frog_bottom {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 300px;
+		height: 290px;
+		margin-left: 150px;
+		top: 450px;
+		z-index: 1;
+	}
+
+	.frog_top {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 600px;
+		height: 600px;
+		transform: rotate(180deg);
+		top: -300px;
+	}
+
+	.frog_left {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		transform: scale(-1, 1);
+		top: 300px;
+		width: 300px;
+		height: 300px;
+	}
+
+	.frog_second-left {
+		clip-path: polygon(0 0, 20% 100%, 70% 0);
+		transform: rotate(295deg);
+		top: 290px;
+		width: 225px;
+		height: 180px;
+		margin-left: 130px;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.frog_center {
+		clip-path: polygon(0 50%, 100% 50%, 90% 100%, 10% 100%);
+		transform: rotate(180deg);
+		top: 300px;
+		width: 300px;
+		height: 300px;
+		margin-left: 150px;
+		z-index: 1;
+	}
+
+	.frog {
+		position: absolute;
+		z-index: 1;
+		margin-left: 210px;
+		top: 260px;
+		width: 180px;
+		opacity: 0;
+	}
+
+	.arrow {
+		position: absolute;
+		top: 90px;
+		margin-left: 220px;
+		width: 200px;
+
+		opacity: 0;
+	}
+
+	.arrow2 {
+		position: absolute;
+		top: 250px;
+		margin-left: 44.531vw;
+		width: 200px;
+
+		opacity: 0;
+	}
+
+	.frog_right {
+		top: 300px;
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 300px;
+		height: 300px;
+		margin-left: 300px;
+	}
+
+	.frog_second-right {
+		clip-path: polygon(0 0, 50% 100%, 70% 0);
+		transform: rotate(65deg);
+		top: 349px;
+		width: 225px;
+		height: 180px;
+		margin-left: 275px;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.origami_frog p {
+		color: green;
+		font-size: 24px;
+		font-family: 'Code Pro', sans-serif;
+		line-height: 30px;
+		position: absolute;
+	}
+
+	.frog_top p {
+		transform: rotate(180deg);
+	}
+
+	.frog_center p {
+		transform: rotate(180deg);
+	}
+
+	.origami_cat div {
+	  position: absolute;
+	  overflow: hidden;
+	  background: rgb(225,227,201);
+	  background: linear-gradient(90deg, rgba(225,227,201,1) 25%, rgba(255,252,240,1) 62%, rgba(255,254,236,1) 100%);
+	}
+
+	.cat_top {
+	  clip-path: polygon(100% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 290px;
+	  margin-left: 150px;
+	  top: -140px;
+
+	  z-index: 1;
+	}
+
+	.cat_top p {
+	  transform: rotate(180deg);
+
+	}
+
+	.cat_bottom {
+	    clip-path: polygon(100% 0, 50% 50%, 0 0);
+
+	    width: 600px;
+	    height: 600px;
+	    top: 300px;
+	}
+
+	.cat_left {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  transform: scale(1, -1);
+	  width: 300px;
+	  height: 300px;
+	}
+
+	.cat_second-left {
+		clip-path: polygon(80% 0, 50% 50%, 0 0);
+		transform: rotate(95deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 25px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.cat_center {
+	  clip-path: polygon(0 50%, 100% 50%, 70% 100%, 30% 100%);
+
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 150px;
+	  z-index: 1;
+	}
+
+	  .origami_cat img {
+	  position: absolute;
+	  z-index: 1;
+	  margin-left: 210px;
+	  top: 120px;
+	  width:180px;
+	  opacity: 0;
+	}
+
+	.cat_left p {
+	  transform: rotate(180deg);
+	}
+
+	.cat_right p {
+	  transform: rotate(180deg);
+	}
+
+	.cat_right {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 300px;
+	}
+
+	.cat_second-right {
+		clip-path: polygon(100% 0, 50% 50%, 20% 0);
+	  transform: rotate(265deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 325px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.origami_cat p {
+	color: gray;
+	font-size: 24px;
+	font-family: 'Code Pro', sans-serif;
+	line-height: 30px;
+	position: absolute;
+	z-index: 3;
+	}
+
+	.origami_dog div {
+	  position: absolute;
+	  overflow: hidden;
+	  background: rgb(225,227,201);
+	  background: linear-gradient(90deg, rgba(225,227,201,1) 25%, rgba(255,252,240,1) 62%, rgba(255,254,236,1) 100%);
+	}
+
+	.dog_top {
+	  clip-path: polygon(100% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 290px;
+	  margin-left: 150px;
+	  top: -140px;
+
+	  z-index: 1;
+	}
+
+	.dog_top p {
+	  transform: rotate(180deg);
+
+	}
+
+	.dog_bottom {
+	    clip-path: polygon(100% 0, 50% 50%, 0 0);
+
+	    width: 600px;
+	    height: 600px;
+	    top: 300px;
+	}
+
+	.dog_left {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  transform: scale(1, -1);
+	  width: 300px;
+	  height: 300px;
+	}
+
+	.dog_second-left {
+		clip-path: polygon(70% 0, 70% 30%, 50% 50%, 20% 0);
+	  transform: rotate(265deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 325px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.dog_second-left-top {
+		clip-path: polygon(30% 0, 30% 30%, 100% 0);
+	  transform: rotate(265deg);
+
+		width: 100px;
+		height: 250px;
+		margin-left: 395px;
+		top: -44px;
+		opacity: 1;
+	}
+
+	.dog_second-left-top-2 {
+		clip-path: polygon(70% 0, 70% 30%, 0 0);
+	  transform: rotate(275deg);
+		border: 1px solid #fffeec;
+		width: 100px;
+		height: 250px;
+		margin-left: 276px;
+		top: 10px;
+		opacity: 0;
+
+		z-index: 1;
+	}
+
+	.dog_center {
+	  clip-path: polygon(0 50%, 100% 50%, 70% 100%, 30% 100%);
+
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 150px;
+	  z-index: 1;
+	}
+
+	  .origami_dog img {
+	  position: absolute;
+	  z-index: 1;
+	  margin-left: 210px;
+	  top: 120px;
+	  width:180px;
+	  opacity: 0;
+	}
+
+	.dog_left p {
+	  transform: rotate(180deg);
+	}
+
+	.dog_right p {
+	  transform: rotate(180deg);
+	}
+
+	.dog_right {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 300px;
+	}
+
+	.dog_second-right {
+		clip-path: polygon(80% 0, 50% 50%, 30% 30%, 30% 0);
+		transform: rotate(95deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 25px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.dog_second-right-top {
+		clip-path: polygon(70% 0, 70% 30%, 0 0);
+	  transform: rotate(95deg);
+
+		width: 100px;
+		height: 250px;
+		margin-left: 106px;
+		top: -44px;
+		opacity: 1;
+	}
+
+	.dog_second-right-top-2 {
+		clip-path: polygon(30% 0, 30% 30%, 100% 0);
+	  transform: rotate(85deg);
+
+		border: 1px solid #e1e3c9;
+		width: 100px;
+		height: 250px;
+		margin-left: 222px;
+		top: 10px;
+		opacity: 0;
+
+		z-index: 1;
+	}
+
+	.origami_dog p {
+	color: orange;
+	font-size: 24px;
+	font-family: 'Code Pro', sans-serif;
+	line-height: 30px;
+	position: absolute;
+	z-index: 3;
+	}
+
+}
+
+@media (min-width: 2560px) {
+	.origami_frog {
+		margin-left: 38.281vw;
+	}
+
+	.origami_cat {
+		margin-left: 38.281vw;
+	}
+
+	.origami_dog {
+		margin-left: 38.281vw;
+	}
+
+	.Button {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: center;
+		width: 600px;
+		margin-top: 30px;
+		opacity: 0;
+		margin-left: 38.281vw;
+	}
+
+	.end {
+		margin-left: 38.281vw;
+	}
+
+	.end p {
+	font-size: 24pt;
+	}
+
+	.game {
+		display: flex;
+	}
+
+	a {
+		color: white;
+		background-color: #78fbfd;
+		text-decoration: none;
+		font-size: 22pt;
+		padding: 18px;
+		border-radius: 5px;
+		border-width: thick;
+		border-style: solid;
+		font-weight: bold;
+		font-family: 'Code Pro', sans-serif;
+		margin-bottom: 15px;
+	}
+
+	.text {
+		position: absolute;
+	}
+
+	.origami_frog div {
+		position: absolute;
+		overflow: hidden;
+		background: rgb(225, 227, 201);
+		background: linear-gradient(90deg, rgba(225, 227, 201, 1) 25%, rgba(255, 252, 240, 1) 62%, rgba(255, 254, 236, 1) 100%);
+	}
+
+	.frog_bottom {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 300px;
+		height: 290px;
+		margin-left: 150px;
+		top: 450px;
+		z-index: 1;
+	}
+
+	.frog_top {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 600px;
+		height: 600px;
+		transform: rotate(180deg);
+		top: -300px;
+	}
+
+	.frog_left {
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		transform: scale(-1, 1);
+		top: 300px;
+		width: 300px;
+		height: 300px;
+	}
+
+	.frog_second-left {
+		clip-path: polygon(0 0, 20% 100%, 70% 0);
+		transform: rotate(295deg);
+		top: 290px;
+		width: 225px;
+		height: 180px;
+		margin-left: 130px;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.frog_center {
+		clip-path: polygon(0 50%, 100% 50%, 90% 100%, 10% 100%);
+		transform: rotate(180deg);
+		top: 300px;
+		width: 300px;
+		height: 300px;
+		margin-left: 150px;
+		z-index: 1;
+	}
+
+	.frog {
+		position: absolute;
+		z-index: 1;
+		margin-left: 210px;
+		top: 260px;
+		width: 180px;
+		opacity: 0;
+	}
+
+	.arrow {
+		position: absolute;
+		top: 90px;
+		margin-left: 220px;
+		width: 200px;
+
+		opacity: 0;
+	}
+
+	.arrow2 {
+		position: absolute;
+		top: 250px;
+		margin-left: 45.898vw;
+		width: 200px;
+
+		opacity: 0;
+	}
+
+	.frog_right {
+		top: 300px;
+		clip-path: polygon(100% 0, 50% 50%, 0 0);
+		width: 300px;
+		height: 300px;
+		margin-left: 300px;
+	}
+
+	.frog_second-right {
+		clip-path: polygon(0 0, 50% 100%, 70% 0);
+		transform: rotate(65deg);
+		top: 349px;
+		width: 225px;
+		height: 180px;
+		margin-left: 275px;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.origami_frog p {
+		color: green;
+		font-size: 24px;
+		font-family: 'Code Pro', sans-serif;
+		line-height: 30px;
+		position: absolute;
+	}
+
+	.frog_top p {
+		transform: rotate(180deg);
+	}
+
+	.frog_center p {
+		transform: rotate(180deg);
+	}
+
+	.origami_cat div {
+	  position: absolute;
+	  overflow: hidden;
+	  background: rgb(225,227,201);
+	  background: linear-gradient(90deg, rgba(225,227,201,1) 25%, rgba(255,252,240,1) 62%, rgba(255,254,236,1) 100%);
+	}
+
+	.cat_top {
+	  clip-path: polygon(100% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 290px;
+	  margin-left: 150px;
+	  top: -140px;
+
+	  z-index: 1;
+	}
+
+	.cat_top p {
+	  transform: rotate(180deg);
+
+	}
+
+	.cat_bottom {
+	    clip-path: polygon(100% 0, 50% 50%, 0 0);
+
+	    width: 600px;
+	    height: 600px;
+	    top: 300px;
+	}
+
+	.cat_left {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  transform: scale(1, -1);
+	  width: 300px;
+	  height: 300px;
+	}
+
+	.cat_second-left {
+		clip-path: polygon(80% 0, 50% 50%, 0 0);
+		transform: rotate(95deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 25px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.cat_center {
+	  clip-path: polygon(0 50%, 100% 50%, 70% 100%, 30% 100%);
+
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 150px;
+	  z-index: 1;
+	}
+
+	  .origami_cat img {
+	  position: absolute;
+	  z-index: 1;
+	  margin-left: 210px;
+	  top: 120px;
+	  width:180px;
+	  opacity: 0;
+	}
+
+	.cat_left p {
+	  transform: rotate(180deg);
+	}
+
+	.cat_right p {
+	  transform: rotate(180deg);
+	}
+
+	.cat_right {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 300px;
+	}
+
+	.cat_second-right {
+		clip-path: polygon(100% 0, 50% 50%, 20% 0);
+	  transform: rotate(265deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 325px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.origami_cat p {
+	color: gray;
+	font-size: 24px;
+	font-family: 'Code Pro', sans-serif;
+	line-height: 30px;
+	position: absolute;
+	z-index: 3;
+	}
+
+	.origami_dog div {
+	  position: absolute;
+	  overflow: hidden;
+	  background: rgb(225,227,201);
+	  background: linear-gradient(90deg, rgba(225,227,201,1) 25%, rgba(255,252,240,1) 62%, rgba(255,254,236,1) 100%);
+	}
+
+	.dog_top {
+	  clip-path: polygon(100% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 290px;
+	  margin-left: 150px;
+	  top: -140px;
+
+	  z-index: 1;
+	}
+
+	.dog_top p {
+	  transform: rotate(180deg);
+
+	}
+
+	.dog_bottom {
+	    clip-path: polygon(100% 0, 50% 50%, 0 0);
+
+	    width: 600px;
+	    height: 600px;
+	    top: 300px;
+	}
+
+	.dog_left {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  transform: scale(1, -1);
+	  width: 300px;
+	  height: 300px;
+	}
+
+	.dog_second-left {
+		clip-path: polygon(70% 0, 70% 30%, 50% 50%, 20% 0);
+	  transform: rotate(265deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 325px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.dog_second-left-top {
+		clip-path: polygon(30% 0, 30% 30%, 100% 0);
+	  transform: rotate(265deg);
+
+		width: 100px;
+		height: 250px;
+		margin-left: 395px;
+		top: -44px;
+		opacity: 1;
+	}
+
+	.dog_second-left-top-2 {
+		clip-path: polygon(70% 0, 70% 30%, 0 0);
+	  transform: rotate(275deg);
+		border: 1px solid #fffeec;
+		width: 100px;
+		height: 250px;
+		margin-left: 276px;
+		top: 10px;
+		opacity: 0;
+
+		z-index: 1;
+	}
+
+	.dog_center {
+	  clip-path: polygon(0 50%, 100% 50%, 70% 100%, 30% 100%);
+
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 150px;
+	  z-index: 1;
+	}
+
+	  .origami_dog img {
+	  position: absolute;
+	  z-index: 1;
+	  margin-left: 210px;
+	  top: 120px;
+	  width:180px;
+	  opacity: 0;
+	}
+
+	.dog_left p {
+	  transform: rotate(180deg);
+	}
+
+	.dog_right p {
+	  transform: rotate(180deg);
+	}
+
+	.dog_right {
+	  clip-path: polygon(80% 0, 50% 50%, 0 0);
+	  transform: rotate(180deg);
+	  width: 300px;
+	  height: 300px;
+	  margin-left: 300px;
+	}
+
+	.dog_second-right {
+		clip-path: polygon(80% 0, 50% 50%, 30% 30%, 30% 0);
+		transform: rotate(95deg);
+
+		width: 250px;
+		height: 250px;
+		margin-left: 25px;
+		top: 25px;
+		opacity: 0;
+	}
+
+	.dog_second-right-top {
+		clip-path: polygon(70% 0, 70% 30%, 0 0);
+	  transform: rotate(95deg);
+
+		width: 100px;
+		height: 250px;
+		margin-left: 106px;
+		top: -44px;
+		opacity: 1;
+	}
+
+	.dog_second-right-top-2 {
+		clip-path: polygon(30% 0, 30% 30%, 100% 0);
+	  transform: rotate(85deg);
+
+		border: 1px solid #e1e3c9;
+		width: 100px;
+		height: 250px;
+		margin-left: 222px;
+		top: 10px;
+		opacity: 0;
+
+		z-index: 1;
+	}
+
+	.origami_dog p {
+	color: orange;
+	font-size: 24px;
+	font-family: 'Code Pro', sans-serif;
+	line-height: 30px;
+	position: absolute;
+	z-index: 3;
+	}
+
 }

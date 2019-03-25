@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Fira Sans Bold";
+  font-family: "Fira Sans Regular";
 
-  src: url("../fonts/FiraSans-Bold.otf") format("truetype");
+  src: url("../fonts/FiraSans-Regular.otf") format("truetype");
 }
