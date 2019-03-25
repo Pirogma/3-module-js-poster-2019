@@ -1,4 +1,4 @@
-html {
+html, body {
   background-image: url("../images/background.svg");
   background-color: #74ed97;
   background-size: cover;

@@ -1,0 +1,55 @@
+html, body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   background-color: #74ed97;
+   background-image: url("../images/background.svg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   font-family: 'Code Pro', sans-serif;
+   cursor: none;
+   }
+
+header {
+padding: 28px 28px 0px;
+}
+
+header a {
+ color: white;
+ text-decoration: none;
+ font-size: 14pt;
+ padding: 15px 15px 0px;
+ font-weight: bold;
+}
+
+#cursor{
+   pointer-events: none;
+   width: 200px;
+   position:absolute;
+   left:50%;
+   top:50%;
+   transform:translate(-50%,-50%);
+   z-index: 10;
+   cursor:pointer;
+   }
+
+   #cat {
+      position: absolute;
+      width: 200px;
+      top: 300px;
+      }
+
+h1 {
+   color: #fff;
+   font-size: 44pt;
+   text-align: center;
+   }
+
+p {
+   font-family: 'Code Pro', sans-serif;
+   text-align: right;
+   color: #fff;
+   font-size: 24pt;
+   padding-right: 15px;
+   }
