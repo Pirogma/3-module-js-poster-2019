@@ -68,7 +68,7 @@ a {
 
 .end {
 	margin-left: 3.125vw;
-	margin-top: 245px;
+	margin-top: -15px;
 	width: 300px;
 }
 
@@ -163,9 +163,13 @@ color: white;
 	opacity: 0;
 }
 
+.empty {
+ margin-top: 125px;
+ height: 145px;
+}
+
 .arrow2 {
-	position: absolute;
-	top: 125px;
+	margin-top: 125px;
 	margin-left: 32.813vw;
 	width: 100px;
 
@@ -584,7 +588,7 @@ z-index: 3;
 	justify-content: space-between;
 	text-align: center;
 	width: 450px;
-	margin-top: 30px;
+	margin-top: 50px;
 	opacity: 0;
 	margin-left: 20.704vw;
 }
@@ -609,7 +613,7 @@ a {
 
 .end {
 	margin-left: 10.938vw;
-	margin-top: 505px;
+	margin-top: -30px;
 	width: 600px;
 }
 
@@ -695,9 +699,13 @@ color: white;
 	opacity: 0;
 }
 
+.empty {
+ margin-top: 250px;
+ height: 290px;
+}
+
 .arrow2 {
-	position: absolute;
-	top: 250px;
+	margin-top: 250px;
 	margin-left: 36.328vw;
 	width: 200px;
 
@@ -1013,7 +1021,7 @@ z-index: 3;
 	justify-content: space-between;
 	text-align: center;
 	width: 600px;
-	margin-top: 30px;
+	margin-top: 50px;
 	opacity: 0;
 	margin-left: 20.703vw;
 }
@@ -1123,9 +1131,13 @@ font-size: 24pt;
 	opacity: 0;
 }
 
+.empty {
+ margin-top: 250px;
+ height: 290px;
+}
+
 .arrow2 {
-	position: absolute;
-	top: 250px;
+	margin-top: 250px;
 	margin-left: 39.746vw;
 	width: 200px;
 
@@ -1441,7 +1453,7 @@ z-index: 3;
 	justify-content: space-between;
 	text-align: center;
 	width: 600px;
-	margin-top: 30px;
+	margin-top: 50px;
 	opacity: 0;
 	margin-left: 29.167vw;
 }
@@ -1551,9 +1563,13 @@ a {
 	opacity: 0;
 }
 
+.empty {
+ margin-top: 250px;
+ height: 290px;
+}
+
 .arrow2 {
-	position: absolute;
-	top: 250px;
+	margin-top: 250px;
 	margin-left: 42.708vw;
 	width: 200px;
 
@@ -1881,7 +1897,7 @@ z-index: 3;
 		justify-content: space-between;
 		text-align: center;
 		width: 600px;
-		margin-top: 30px;
+		margin-top: 50px;
 		opacity: 0;
 		margin-left: 34.375vw;
 	}
@@ -1987,9 +2003,13 @@ z-index: 3;
 		opacity: 0;
 	}
 
+	.empty {
+	 margin-top: 250px;
+	 height: 290px;
+	}
+
 	.arrow2 {
-		position: absolute;
-		top: 250px;
+		margin-top: 250px;
 		margin-left: 44.531vw;
 		width: 200px;
 
@@ -2309,7 +2329,7 @@ z-index: 3;
 		justify-content: space-between;
 		text-align: center;
 		width: 600px;
-		margin-top: 30px;
+		margin-top: 50px;
 		opacity: 0;
 		margin-left: 38.281vw;
 	}
@@ -2415,9 +2435,13 @@ z-index: 3;
 		opacity: 0;
 	}
 
+	.empty {
+	 margin-top: 250px;
+	 height: 290px;
+	}
+
 	.arrow2 {
-		position: absolute;
-		top: 250px;
+		margin-top: 250px;
 		margin-left: 45.898vw;
 		width: 200px;
 

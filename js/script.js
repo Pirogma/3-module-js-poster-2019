@@ -98,7 +98,7 @@ if (mql.matches) {
         })
 
         $(function() {
-          $(".arrow2").delay(4200).fadeTo(0, 1)
+          $(".arrow2").delay(4200).fadeTo(0, 0.8)
         })
 
 
@@ -141,7 +141,7 @@ if (mql.matches) {
           })
 
           $(function() {
-            $(".arrow2").delay(4300).fadeTo(0, 1)
+            $(".arrow2").delay(4300).fadeTo(0, 0.8)
           })
 
           $(function() {
@@ -224,7 +224,7 @@ $(function() {
       })
 
       $(function() {
-        $(".arrow2").delay(4200).fadeTo(0, 1)
+        $(".arrow2").delay(4200).fadeTo(0, 0.8)
       })
 
 
@@ -267,7 +267,7 @@ $(function() {
   })
 
   $(function() {
-    $(".arrow2").delay(4300).fadeTo(0, 1)
+    $(".arrow2").delay(4300).fadeTo(0, 0.8)
   })
 
   $(function() {
