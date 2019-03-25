@@ -20,39 +20,6 @@ $(function() {
           })
   })
 
-
-$(function() {
-  $(".intro-1").delay(0).fadeTo(0, 1)
-})
-
-$(function() {
-  $(".intro-1").delay(250).fadeTo(0, 0)
-})
-
-$(function() {
-  $(".intro-2").delay(250).fadeTo(0, 1)
-})
-
-$(function() {
-  $(".intro-2").delay(500).fadeTo(0, 0)
-})
-
-$(function() {
-  $(".intro-3").delay(500).fadeTo(0, 1)
-})
-
-$(function() {
-  $(".intro-3").delay(750).fadeTo(0, 0)
-})
-
-$(function() {
-  $(".intro-4").delay(750).fadeTo(0, 1)
-})
-
-$(function() {
-  $(".intro-4").delay(1000).fadeTo(0, 0)
-})
-
 $(function() {
   var random = Math.floor(Math.random() * $('.origami').length);
 $('.origami').hide().eq(random).show();
