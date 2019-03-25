@@ -42,8 +42,7 @@ a {
 .text p {
 	position: absolute;
 	margin-left: 3.125vw;
-
-	top: 100px;
+	top: 325px;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 26pt;
 	font-weight: 400;
@@ -59,10 +58,6 @@ a {
 }
 
 .intro-3 {
-	opacity: 0;
-}
-
-.intro-4 {
 	opacity: 0;
 }
 
