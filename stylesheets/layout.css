@@ -604,6 +604,11 @@ a {
 
 .text {
 	position: absolute;
+	top: 350px;
+}
+
+.text p{
+	font-size: 30pt;
 }
 
 .end {
@@ -1049,6 +1054,11 @@ font-size: 24pt;
 
 .text {
 	position: absolute;
+	top: 275px;
+}
+
+.text p{
+	font-size: 26pt;
 }
 
 .origami_frog {
@@ -1481,6 +1491,11 @@ a {
 
 .text {
 	position: absolute;
+	top: -50px;
+}
+
+.text p{
+	font-size: 30pt;
 }
 
 .origami_frog {
@@ -1925,6 +1940,11 @@ z-index: 3;
 
 	.text {
 		position: absolute;
+		top: -50px;
+	}
+
+	.text p{
+		font-size: 36pt;
 	}
 
 	.origami_frog div {
@@ -2357,6 +2377,11 @@ z-index: 3;
 
 	.text {
 		position: absolute;
+		top: -50px;
+	}
+
+	.text p{
+		font-size: 44pt;
 	}
 
 	.origami_frog div {
