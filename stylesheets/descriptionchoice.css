@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 html, body {
   background-image: url("../images/background.svg");
   background-color: #74ed97;
