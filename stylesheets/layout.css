@@ -2377,7 +2377,7 @@ z-index: 3;
 
 	.text {
 		position: absolute;
-		top: -50px;
+		top: 300px;
 	}
 
 	.text p{
