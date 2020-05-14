@@ -8,7 +8,7 @@ body {
 	height: 100%;
 	margin: 0;
 	overflow: hidden;
-	background-color: #78fbfd;
+	background-image: url("../images/paper_texture-1.jpg");
 }
 
 .Button {
@@ -26,8 +26,8 @@ body {
 }
 
 a {
-	color: white;
-	background-color: #78fbfd;
+	color: black;
+	background-color: #7ba2e4;
 	text-decoration: none;
 	font-size: 18pt;
 	padding: 15px;
@@ -35,7 +35,7 @@ a {
 	border-width: medium;
 	border-style: solid;
 	font-weight: bold;
-	font-family: 'Code Pro', sans-serif;
+	font-family: 'ALS Schlange Sans regular', sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -43,10 +43,13 @@ a {
 	position: absolute;
 	margin-left: 3.125vw;
 	top: 325px;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'ALS Schlange Sans regular', sans-serif;
 	font-size: 26pt;
-	font-weight: 400;
-	color: gray;
+	font-weight: 500;
+	color: black;
+	background-color: #7ba2e4;
+	padding: 20px;
+	border-radius: 25px;
 }
 
 .intro-1 {
@@ -69,10 +72,10 @@ a {
 
 .end p {
 text-align: center;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'ALS Schlange Sans regular', sans-serif;
 font-size: 16pt;
 font-weight: 400;
-color: white;
+color: black;
 }
 
 .phrase-1 {
@@ -193,7 +196,7 @@ color: white;
 .origami_frog p {
 	color: green;
 	font-size: 12px;
-	font-family: 'Code Pro', sans-serif;
+	font-family: 'ALS Schlange Sans regular', sans-serif;
 	line-height: 15px;
 	position: absolute;
 }
@@ -306,9 +309,9 @@ color: white;
 }
 
 .origami_cat p {
-color: white;
+color: black;
 font-size: 12px;
-font-family: 'Code Pro', sans-serif;
+font-family: 'ALS Schlange Sans regular', sans-serif;
 line-height: 15px;
 position: absolute;
 z-index: 3;
@@ -589,8 +592,8 @@ z-index: 3;
 }
 
 a {
-	color: white;
-	background-color: #78fbfd;
+	color: black;
+	background-color: #7ba2e4;
 	text-decoration: none;
 	font-size: 22pt;
 	padding: 18px;
@@ -619,9 +622,9 @@ a {
 
 .end p {
 text-align: center;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'ALS Schlange Sans regular', sans-serif;
 font-size: 24pt;
-color: white;
+color: black;
 }
 
 .origami_frog {
@@ -1031,8 +1034,8 @@ z-index: 3;
 }
 
 a {
-	color: white;
-	background-color: #78fbfd;
+	color: black;
+	background-color: #7ba2e4;
 	text-decoration: none;
 	font-size: 22pt;
 	padding: 18px;
@@ -1476,8 +1479,8 @@ font-size: 24pt;
 }
 
 a {
-	color: white;
-	background-color: #78fbfd;
+	color: black;
+	background-color: #7ba2e4;
 	text-decoration: none;
 	font-size: 22pt;
 	padding: 18px;
@@ -1925,8 +1928,8 @@ z-index: 3;
 	}
 
 	a {
-		color: white;
-		background-color: #78fbfd;
+		color: black;
+		background-color: #7ba2e4;
 		text-decoration: none;
 		font-size: 22pt;
 		padding: 18px;
@@ -2362,8 +2365,8 @@ z-index: 3;
 	}
 
 	a {
-		color: white;
-		background-color: #78fbfd;
+		color: black;
+		background-color: #7ba2e4;
 		text-decoration: none;
 		font-size: 22pt;
 		padding: 18px;

@@ -3,3 +3,15 @@
 
   src: url("../fonts/Code-Pro.woff") format("woff");
 }
+
+@font-face {
+  font-family: "ALS Schlange Sans regular";
+
+  src: url("../fonts/ALS-Schlange_sans_reg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ALS Schlange Sans bold";
+
+  src: url("../fonts/ALS-Schlange_sans_bld.woff") format("woff");
+}
